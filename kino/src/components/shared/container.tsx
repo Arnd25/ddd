@@ -9,7 +9,7 @@ interface IContainerProps {
 
 const Container = ({ className, children }: IContainerProps) => {
     return (
-        <div className={cn(className, "max-w-[1480px] mx-auto px-5")}>
+        <div className={cn(className, "max-w-[1480px] mx-auto px-1 md:px-5 ")}>
             {children}
         </div>
     );

@@ -8,6 +8,13 @@ import logo from "../../../public/static/logo.svg";
 import Link from "next/link";
 import { FaMapMarkerAlt } from "react-icons/fa";
 import MobileButton from "@/widgets/header/MobileButton";
+import {
+    DropdownMenu,
+    DropdownMenuContent,
+    DropdownMenuGroup,
+    DropdownMenuItem, DropdownMenuLabel,
+    DropdownMenuTrigger
+} from "@/components/ui/dropdown-menu";
 
 
 const Header = () => {
@@ -16,18 +23,16 @@ const Header = () => {
         <header className="w-full absolute" id='header'>
             <Container className="w-full flex items-center gap-x-16 text-white text-lg justify-between bg-black/60 backdrop-blur-sm rounded-b-2xl ">
                 <div className="flex items-center ">
-                    <Link href={"/public"}>
+                    <Link href={"/"}>
                         <Image src={logo} alt="Логотип сайта" className="" />
                     </Link>
                     <Link href="" className="flex items-center gap-x-1.5">
                         Волгоград
-                        <FaMapMarkerAlt/>
                     </Link>
                 </div>
                 <NavMenu className="flex-1 hidden lg:inline-flex max-w-fit" />
                 <MobileButton onOpenMenu={() => setMenuOpen(true)} className="ml-auto md:ml-[unset] block lg:hidden" />
             </Container>
-
             <MobileMenu isOpen={menuOpen} onClose={() => setMenuOpen(false)} />
         </header>
 
