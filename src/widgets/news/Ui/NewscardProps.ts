@@ -1,5 +1,5 @@
 import Img from "../../../../public/static/a4def80ea7cfddba6d84ea608cab5fd3.jpg";
-
+import { StaticImageData } from 'next/image';
 
 interface NewscardProps {
     image?: StaticImageData;
