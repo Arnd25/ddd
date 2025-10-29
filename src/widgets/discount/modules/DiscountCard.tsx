@@ -1,8 +1,12 @@
-import React from 'react';
+"use client"
+import React, {useState} from 'react';
 import {Button} from "@/components/ui/button";
 import Link from "next/link";
+import DiscountMenu from "@/widgets/discount/mobile-menu";
+import DiscountButton from "@/widgets/discount/MobileButton";
 
 const DiscountCard = () => {
+    const [menuOpen, setMenuOpen] = useState(false);
     return (
         <div className=" flex flex-col gap-y-10">
             <div className="bg-[#341B43] flex flex-col lg:flex-row py-7 px-16 rounded-3xl justify-between gap-x-40 gap-y-14">
@@ -14,9 +18,7 @@ const DiscountCard = () => {
                 <div className="max-w-[480]  flex flex-col justify-between lg:order-1 gap-y-8">
                     <h3 className="font-bold text-2xl">Детские билет в кино со скидкой 60%</h3>
                     <p className="text-xl text-gray-500 leading-5">Для детей до 12 лет (включительно) действует специальный детский билет по приятной цене — или даже бесплатно на утренние сеансы мультфильмов.</p>
-                    <Button variant="destructive" className="w-fit h-fit p-0 rounded-2xl" >
-                        <Link href={""} className="w-full h-full py-3 px-6">Подробнее</Link>
-                    </Button>
+                    <DiscountButton onOpenMenu={() => setMenuOpen(true)} />
                 </div>
             </div>
             <div className="bg-[#341B43] flex flex-col lg:flex-row py-7 px-16 rounded-3xl justify-between gap-x-40 gap-y-14">
@@ -28,11 +30,10 @@ const DiscountCard = () => {
                 <div className="max-w-[480]  flex flex-col justify-between  gap-y-8">
                     <h3 className="font-bold text-2xl">Детские билет в кино со скидкой 60%</h3>
                     <p className="text-xl text-gray-500 leading-5">Для детей до 12 лет (включительно) действует специальный детский билет по приятной цене — или даже бесплатно на утренние сеансы мультфильмов.</p>
-                    <Button variant="destructive" className="w-fit h-fit p-0 rounded-2xl" >
-                        <Link href={""} className="w-full h-full py-3 px-6">Подробнее</Link>
-                    </Button>
+                    <DiscountButton onOpenMenu={() => setMenuOpen(true)} />
                 </div>
             </div>
+            <DiscountMenu isOpen={menuOpen} onClose={() => setMenuOpen(false)}/>
         </div>
 
 

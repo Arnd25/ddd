@@ -6,15 +6,7 @@ import NavMenu from "@/widgets/header/nav-menu";
 import MobileMenu from "@/widgets/header/mobile-menu";
 import logo from "../../../public/static/logo.svg";
 import Link from "next/link";
-import { FaMapMarkerAlt } from "react-icons/fa";
 import MobileButton from "@/widgets/header/MobileButton";
-import {
-    DropdownMenu,
-    DropdownMenuContent,
-    DropdownMenuGroup,
-    DropdownMenuItem, DropdownMenuLabel,
-    DropdownMenuTrigger
-} from "@/components/ui/dropdown-menu";
 
 
 const Header = () => {

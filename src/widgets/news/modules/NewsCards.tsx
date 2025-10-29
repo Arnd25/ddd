@@ -8,7 +8,7 @@ const NewsCards = () => {
         <div className="grid lg:grid-cols-2 gap-6">
             {NewscardProps.map((item, index) => (
                 <div key={index} className="flex flex-col gap-4 ">
-                    <Image src={item.image} alt={""} className="w-full h-[250]"/>
+                    <Image src={item.image} alt={""} className="w-full h-[250] rounded-lg border-gray-500 border"/>
                     <div className="flex flex-col px-5 gap-5">
                         <div className="flex justify-between items-center">
                             <h3 className="text-2xl font-bold">{item.title}</h3>
