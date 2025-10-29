@@ -1,9 +1,10 @@
 import img from "../../../../public/static/kino.png"
+import { StaticImageData } from 'next/image';
 
 interface SoonCardProps {
     title: string;
     genres: string[];
-    image: string;
+    image: StaticImageData;
     age: number;
     data: string;
     href: string;
