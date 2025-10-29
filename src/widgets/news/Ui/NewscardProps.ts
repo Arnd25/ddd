@@ -1,4 +1,4 @@
-import img from "../../../../public/static/a4def80ea7cfddba6d84ea608cab5fd3.jpg";
+import Img from "../../../../public/static/a4def80ea7cfddba6d84ea608cab5fd3.jpg";
 
 
 interface NewscardProps {
@@ -9,13 +9,13 @@ interface NewscardProps {
 }
 export const NewscardProps: NewscardProps[] = [
     {
-        image: img,
+        image: Img,
         title: "шанс выиграть призы",
         date: "04.10.2025",
         href: "",
     },
     {
-        image: img,
+        image: Img,
         title: "шанс выиграть призы",
         date: "04.10.2025",
         href: "",
