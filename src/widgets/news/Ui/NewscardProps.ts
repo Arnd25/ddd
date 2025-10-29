@@ -9,13 +9,13 @@ interface NewscardProps {
 }
 export const NewscardProps: NewscardProps[] = [
     {
-        image: Img,
+        image: "../../../../public/static/a4def80ea7cfddba6d84ea608cab5fd3.jpg",
         title: "шанс выиграть призы",
         date: "04.10.2025",
         href: "",
     },
     {
-        image: Img,
+        image: "../../../../public/static/a4def80ea7cfddba6d84ea608cab5fd3.jpg",
         title: "шанс выиграть призы",
         date: "04.10.2025",
         href: "",
