@@ -2,7 +2,7 @@ import Img from "../../../../public/static/a4def80ea7cfddba6d84ea608cab5fd3.jpg"
 
 
 interface NewscardProps {
-    image?: string;
+    image?: StaticImageData;
     title: string;
     date: string;
     href: string;
