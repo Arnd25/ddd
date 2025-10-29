@@ -21,7 +21,7 @@ const DiscountCard = () => {
                     <DiscountButton onOpenMenu={() => setMenuOpen(true)} />
                 </div>
             </div>
-            <div className="bg-[#341B43] flex flex-col lg:flex-row py-7 px-16 rounded-3xl justify-between gap-x-40 gap-y-14">
+            <div className="bg-[#341B43] flex flex-col lg:flex-row py-7 px-3 lg:px-16 rounded-3xl justify-between gap-x-40 gap-y-14">
                 <div className="bg-[linear-gradient(to_left,rgba(203,45,234,1),rgba(255,64,64,1))] w-full rounded-3xl py-7 px-14 justify-between  flex flex-col  h-[300]">
                     <h3 className="font-bold text-3xl">Детский билет </h3>
                     <p className="text-2xl font-bold w-fit py-0.5 px-7 bg-red-600">Скидка 60 %</p>
