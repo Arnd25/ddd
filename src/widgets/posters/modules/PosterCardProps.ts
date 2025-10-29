@@ -1,9 +1,10 @@
 import img from "../../../../public/static/kino.png"
+import { StaticImageData } from 'next/image';
 
 export interface PosterCardProps {
     title: string;
     genres: string[];
-    image: string;
+    image: StaticImageData;
     age: number;
     href: string;
 }
