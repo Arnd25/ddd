@@ -120,3 +120,6 @@
     @apply bg-background text-foreground;
   }
 }
+.bg-custom {
+    background-image: url("@/../public/static/background.png");
+}
