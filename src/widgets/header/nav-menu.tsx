@@ -16,8 +16,6 @@ const NavMenu = ({className} : INavMenuProps) => {
                             <Link href={item.href} className="hover:text-red-600 font-normal">{item.label}</Link>
                         </li>
                     ))}
-
-
                 </menu>
             </nav>
         </div>
