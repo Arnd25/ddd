@@ -13,7 +13,7 @@ const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false);
     return (
         <header className="w-full absolute" id='header'>
-            <Container className="w-full flex items-center gap-x-16 text-white text-lg justify-between bg-black/60 backdrop-blur-sm rounded-b-2xl ">
+            <Container className="w-full flex items-center gap-x-16 text-white text-lg justify-between bg-black/60 backdrop-blur-sm rounded-b-2xl">
                 <div className="flex items-center ">
                     <Link href={"/"}>
                         <Image src={logo} alt="Логотип сайта" className="" />
