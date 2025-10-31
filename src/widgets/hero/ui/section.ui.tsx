@@ -1,5 +1,6 @@
 import {cn} from "@/lib/utils";
 import Container from "@/components/shared/container";
+import background from "@../public/static/background.png";
 
 
 
@@ -11,9 +12,9 @@ interface Props {
 }
 
 export const SectionUi: React.FC<Props> = ({ className }) => {
-    const bgClass = `bg-[url('${process.env.PUBLIC_URL}/static/background.png')]`;
     return(
-        <section className={cn(className, bgClass, 'bg-custom')}>
+        <section className={cn(className, "bg-cover bg-center")} style={{ backgroundImage: `url(${background})` }}
+            >
             <Container className="w-full ">
                 <div className="gap-10   min-h-[700] pt-56">
                     <h1 className="text-white text-5xl mb-12">Кино, которое объединяет</h1>
