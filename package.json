@@ -2,6 +2,7 @@
   "name": "kino",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://Armd25.github.io/ddd",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
