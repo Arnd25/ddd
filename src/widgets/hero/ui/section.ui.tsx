@@ -2,7 +2,7 @@
 import { cn } from "@/lib/utils";
 import Container from "@/components/shared/container";
 
-const backgroundImageUrl = `${process.env.PUBLIC_URL}/static/background.png`;
+const backgroundImageUrl = `@/../static/background.png`;
 
 interface Props {
   className?: string;
