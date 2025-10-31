@@ -1,7 +1,6 @@
 import {cn} from "@/lib/utils";
 import Container from "@/components/shared/container";
 
-const bgClass = `bg-[url('${process.env.PUBLIC_URL}/static/background.png')]`;
 
 
 
@@ -12,6 +11,7 @@ interface Props {
 }
 
 export const SectionUi: React.FC<Props> = ({ className }) => {
+    const bgClass = `bg-[url('${process.env.PUBLIC_URL}/static/background.png')]`;
     return(
         <section className={cn(className, bgClass, 'bg-custom')}>
             <Container className="w-full ">
