@@ -1,6 +1,6 @@
 import {cn} from "@/lib/utils";
 import Container from "@/components/shared/container";
-import background from "@../public/static/background.png";
+import background from "@/../public/static/background.png";
 
 
 
